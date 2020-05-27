@@ -4,11 +4,11 @@ class Gardenctl < Formula
   version "v0.17.0"
 
   if OS.mac?
-    url "https://github.com/gardener/gardenctl/releases/download/v0.17.0/gardenctl-darwin-amd64"
-    sha256 "ca6ec9804432a36e45e30bf5fd903c68cef3574062fb9bac6eb80a557d863486"
+    url "https://github.com/gardener/gardenctl/releases/download/refs/tags/0.19.1/gardenctl-darwin-amd64"
+    sha256 "fc56514d1415ff75f515eefdc011987aed556068"
   elsif OS.linux?
-    url "https://github.com/gardener/gardenctl/releases/download/v0.17.0/gardenctl-linux-amd64"
-    sha256 "8d33c751e8d32fe7fff15306c7de59cf15c45fb04e2f9abf988d3edd3f305cc4"
+    url "https://github.com/gardener/gardenctl/releases/download/refs/tags/0.19.1/gardenctl-linux-amd64"
+    sha256 "fc56514d1415ff75f515eefdc011987aed556068"
   end
 
   depends_on :arch => :x86_64
@@ -21,3 +21,4 @@ class Gardenctl < Formula
     system "#{bin}/gardenctl", "version"
   end
 end
+
